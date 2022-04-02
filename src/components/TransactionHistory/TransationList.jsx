@@ -1,5 +1,5 @@
 import React ,{useContext}from 'react'
-import {GlobalContext} from './GlobalContext'
+import {GlobalContext} from './GlobalContext/GlobalContext'
 import Transaction from './transaction.jsx'
 
 function TransationList() {
