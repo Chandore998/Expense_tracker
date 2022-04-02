@@ -1,5 +1,5 @@
 import React,{useContext, useEffect, useState} from 'react';
-import { GlobalContext } from './GlobalContext/GlobalContext';
+import { GlobalContext } from '../GlobalContext/GlobalContext.jsx';
 
 
 function Balance() {

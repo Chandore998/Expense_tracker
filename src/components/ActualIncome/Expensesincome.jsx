@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import { GlobalContext } from './GlobalContext/GlobalContext';
+import { GlobalContext } from '../GlobalContext/GlobalContext';
 
 function Expensesincome() {
 
