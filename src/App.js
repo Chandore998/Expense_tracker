@@ -1,5 +1,5 @@
-import Header from './components/Header.jsx'
-import Balance from './components/Balance.jsx'
+import Header from './components/ActualIncome/Header.jsx'
+import Balance from './components/ActualIncome/Balance.jsx'
 import Expensesincome from './components/ActualIncome/Expensesincome';
 import TransationList from './components/TransactionHistory/TransationList.jsx';
 import AddTransation from './components/TransactionForm/AddTransation';
