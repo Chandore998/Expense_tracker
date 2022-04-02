@@ -1,11 +1,18 @@
 import React,{createContext, useReducer,useEffect} from 'react'
 import Appreducer from './Appreducer.jsx'
 
+
+// initialState for Globalcontext
+
 const initialState ={
     transactions: []
 }
 
+
 export const GlobalContext = createContext(initialState);
+
+
+// GlobalProvider will transfer all props  values from top to bottom node
 
 export const GlobalProvider = ({children}) => {
 
@@ -14,9 +21,12 @@ export const GlobalProvider = ({children}) => {
         return storeData ? JSON.parse(storeData) : initialState
     })
 
+    // for each time state is set on localStorage 
+
     useEffect(()=>{
         localStorage.setItem('transactions', JSON.stringify(state))
     },[state])
+
 
 
     function addTransaction(transaction){
