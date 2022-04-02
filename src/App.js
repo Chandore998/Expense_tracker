@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header.jsx'
+import Balance from './components/Balance.jsx'
+import Expensesincome from './components/Expensesincome';
+import TransationList from './components/TransationList.jsx';
+import AddTransation from './components/AddTransation.jsx';
+
+import {GlobalProvider} from './components/GlobalContext.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="d-flex flex-column align-items-center Colour ">
+      <GlobalProvider>
+      <Header />
+      <div className='d-flex flex-column align-items-start'>
+            <Balance/>
+            <Expensesincome/>
+            <TransationList/>
+            <AddTransation/>
+      </div>
+      </GlobalProvider>
     </div>
   );
 }
 
 export default App;
+
