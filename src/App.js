@@ -1,8 +1,8 @@
 import Header from './components/Header.jsx'
 import Balance from './components/Balance.jsx'
-import Expensesincome from './components/Expensesincome';
-import TransationList from './components/TransationList.jsx';
-import AddTransation from './components/AddTransation.jsx';
+import Expensesincome from './components/ActualIncome/Expensesincome';
+import TransationList from './components/TransactionHistory/TransationList.jsx';
+import AddTransation from './components/TransactionForm/AddTransation';
 
 import {GlobalProvider} from './components/GlobalContext.jsx';
 
